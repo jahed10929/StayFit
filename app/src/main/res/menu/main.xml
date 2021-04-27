@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="course.labs.modernuilab.MainActivity" >
+
+    <item
+        android:id="@+id/workoutMenu"
+        android:orderInCategory="100"
+        android:title="@string/add_workout"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mealMenu"
+        android:orderInCategory="100"
+        android:title="@string/add_meal"
+        app:showAsAction="never" />
+
+</menu>

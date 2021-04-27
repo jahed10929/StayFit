@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layoutLog">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_above="@+id/lytBottom"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/lyLog"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:weightSum="100"
+            android:orientation="horizontal"
+            android:background="@color/main_clr"
+            >
+            <Button
+                android:id="@+id/btnWorkout"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:padding="10dp"
+                android:background="@color/main_clr"
+                android:text="@string/workout"
+                android:textColor="@color/white"
+                android:onClick="OnClickBtn"
+                />
+            <Button
+                android:id="@+id/btnMeal"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="50"
+                android:padding="10dp"
+                android:background="@color/main_clr"
+                android:text="@string/meal"
+                android:textColor="@color/white"
+                android:onClick="OnClickBtn"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+    <include
+        layout="@layout/lyt_workout"
+        android:visibility="visible"/>
+    <include
+        layout="@layout/lyt_meal"
+        android:visibility="gone"/>
+
+</LinearLayout>

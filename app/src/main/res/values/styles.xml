@@ -1,0 +1,14 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorPrimary">@color/main_clr</item>
+        <item name="colorPrimaryDark">@color/sec_clr</item>
+        <item name="colorAccent">@color/main_clr</item>
+        <item name="android:itemBackground">@color/sec_clr</item>
+        <!--<item name="actionMenuTextColor">@color/white</item>
+        <item name="android:fontFamily">@font/open_sans</item>-->
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+    </style>
+</resources>
